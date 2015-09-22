@@ -1,0 +1,467 @@
+//GLOBAL STYLES
+html { 
+	background: url() no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	@media only screen and (min-width: 900px) {
+		border-image-source: url('/content/outer-frame.png');
+		border-image-slice: 40;
+		border-image-width: 25px;
+		border-image-outset: 1;
+		min-height: 100%;
+	}
+	@media only screen and (max-device-width: 900px) {
+		border-image: none;
+	}
+	font-family: "darbysansPoster", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+ 	height: 100%;
+ 	position: fixed;
+ 	width: 100%;
+}
+
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	body{
+		// border-image: url('/content/outer-frame.png'); 
+		// background-attachment: scroll;
+  // 		-webkit-background-size: cover;
+  // 		-moz-background-size: cover;
+  // 		-o-background-size: cover;
+  // 		background-repeat: no-repeat;
+  // 		background-size: 100%;
+	    -webkit-box-shadow: inset 0px 65px 0px 0px rgba(0,0,0,0.28);
+		-moz-box-shadow: inset 0px 65px 0px 0px rgba(0,0,0,0.28);
+		box-shadow: inset 0px 65px 0px 0px rgba(0,0,0,0.28);
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	    max-height: 100%;
+	    // position: absolute;
+	    font-family: "darbysansPoster", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+	}
+
+	.page-overlay.open {
+	  opacity:    0.5; 
+	  background: #000; 
+	  width:      100%;
+	  height:     100%; 
+	  z-index:    10;
+	  top:        0; 
+	  left:       0; 
+	  position:   fixed; 
+	}
+
+
+.top-nav{
+	ul {
+		@media only screen and (min-width: 1700px) {
+			margin-left: 80px;
+		}
+	}
+	li {
+		display: inline-block;
+		float: left;
+		color: white;
+		font-family: 'darbysansPoster';
+		margin: 0 40px;
+		@media only screen and (max-width: 900px) {
+			display: none;			
+		}
+		@media only screen and (max-width: 1250px) {
+			margin: 0 20px;
+			font-size: 14px;
+		}
+		@media only screen and (max-device-width: 900px){
+			display: none;
+		}
+		@media only screen and (min-width: 1400px) {
+			margin: 0 60px;	
+			font-size: 16px;		
+		}
+		@media only screen and (min-width: 1700px) {
+			margin: 0 80px;
+		}
+	}
+	
+
+	.book-now {
+		&:hover {
+			background: url('/content/book-now-expand.png');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			// float: left;
+			display: inline-block;
+			z-index: 20;
+			overflow: visible;
+			height: 275px;
+    		width: 200px;
+		}
+		margin: -11px 10px 0;
+		width: 150px;
+    	height: 45px;
+    	background: url('/content/book-now-frame.png'); 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		// float: left;
+		display: inline-block;
+		color: white;
+		font-family: 'darbysansPoster';
+		text-align: center;
+		@media only screen and (max-width: 900px) {
+			position: fixed; 
+			right: 10px;
+		}
+		@media only screen and (max-device-width: 900px){
+			position: fixed;
+    		right: 10px;
+    		top: 50px;
+    		width: 288px;
+   			height: 89px;
+   			font-size: 34px;
+		}
+		@media only screen and (max-width: 800px){
+			top: 22px;
+		}
+    	a {
+    		margin-top: 13px;
+    		display: inline-block;
+    		@media only screen and (max-device-width: 900px){
+    			margin-top: 25px;
+    		}
+    	}
+	}
+
+}
+
+
+.hamburger {
+	display: none;
+	color: white;
+	font-size: 30px;
+	margin-left: 15px;
+		@media only screen and (max-device-width: 900px){
+			display: inline-block;
+		}
+		@media only screen and (max-width: 900px){
+			display: inline-block;
+			// icon-color: white;
+		}
+}
+.logo {
+    margin: 0 auto;
+    // padding: 0 35%;
+    padding: 0 42%;
+    width: 15%;
+    @media only screen and (max-device-width: 900px){
+    	width: 40%;
+    	display: inline-block;
+    	margin: 0;
+    	padding: 0 0 0 100px;
+    	margin-top: -60px;
+    }
+    @media only screen and (max-width: 800px){
+    	padding-top: 10px; 
+    	padding-left: 25%;
+    	padding-right: 0;
+    	width: 30%;
+    	display: inline-block;
+    }
+}
+
+
+.mobile-nav {
+	display: none;
+
+}
+
+.mobile-nav.open {
+	display: inline-block;
+		position: absolute;
+	z-index: 30;
+	li {
+		font-family: 'darbysansPoster';
+		margin: 30px;
+		font-size: 50px;
+		color: white;
+	}
+	.sign-up {
+		margin-top: 120px;
+		margin-bottom: 50px;
+		border: 1px white solid;
+		color: white;
+		width: 300px;
+    	height: 40px;
+    	margin-left: 60px;
+    	font-size: 30px;
+    	text-align: center;
+    	font-family: 'darbysansPoster';
+
+	}
+}
+
+.page-frame {
+	position: absolute;
+    z-index: 0;
+    left: 0;
+    max-width: 100%;
+}
+.footer {
+	-webkit-box-shadow: inset 0px -75px 0px 0px rgba(0,0,0,0.38);
+	-moz-box-shadow: inset 0px -75px 0px 0px rgba(0,0,0,0.38);
+		box-shadow: inset 0px -75px 0px 0px rgba(0,0,0,0.38);
+	float: right;
+	position: absolute;
+	@media only screen and (max-width: 800px){
+		position: fixed;
+		
+	}
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	ul {
+		display: inline-block;
+
+	}
+	li {
+		display: inline-block;
+		float: left;
+		color: white;
+		font-family: 'darbysansPoster';
+		margin: 0 20px;
+	}
+	.main {
+		// margin-left: 130px;
+		width: 70%;
+		@media only screen and (max-width: 1150px){
+			width: 60%;
+			margin-left: 0;
+			li {
+				font-size: 12px;
+				margin: 0 10px;
+			}
+		}
+		@media only screen and (max-width: 900px){
+			width: 100%;
+			margin: 0 10%;
+			left: 0;
+			li {
+				font-size: 12px;
+				margin: 0 5px;
+			}
+		}
+	}
+	.social {
+		// width: 30%;
+   		right: 0;
+		li{
+			margin: 0 5px;
+		}
+		@media only screen and (max-width: 900px){
+			width: 100%;
+			margin: 0 30%;
+		}
+	}
+
+}
+//HOME PAGE
+#home-page {
+	box-shadow: none;
+	.home-center {
+		color: white;
+		font-family: 'darbysansPoster';
+		margin: 25% 25%;
+		text-align: center;
+		@media only screen and (max-width: 1000px){
+			margin: 25% 25%
+		}
+		@media only screen and (min-width: 1650px){
+			margin: 15% 40%
+		}
+
+	}
+	.home-center:before {
+		border-top: 3px solid white;
+		width: 75%;
+		content: '';
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.home-center-text:after {
+		border-bottom: 3px solid white;
+		width: 75%;
+		content:'';
+		display: block;
+		text-align: center;
+		margin: 15px auto;
+	}
+}
+#home-page.hidden{
+	display: none;
+}
+
+//ROOMS PAGE
+#rooms-page.hidden
+{
+	display: none;
+}
+
+#rooms-page {
+	box-shadow: none;
+   	.details-border
+   	{
+   		font-family: 'darbysansPoster';
+     	border: 1px solid #fff;
+   		padding: 10px;	
+   		width: 300px;
+   		height: 375px;
+   		position: relative;
+	    left: 55%;
+	    top: 80px;	
+	    @media only screen and (min-device-width: 375px)
+	    and (max-device-width : 667px) // or 41.6875em
+	    and (orientation : portrait) { 
+			left: 15%;
+			right: 15%;
+			width: 70%;
+			height: 70%;
+			padding: 2%;
+			position: absolute;
+			top: 15%;
+			padding-top: 3.5%;
+    		padding-left: 3%;
+		}
+		@media only screen and (max-width: 800px){ 
+			left: 25%;
+			right: 15%;
+			width: 50%;
+			padding: 2%;
+			top: 3%;
+		}
+		.details-box {
+			position: absolute;
+		    width: 93%;
+	   		height: 94%;
+			margin-top: 10px;
+			margin-left: 10px;
+		    background: #fff;
+		    overflow-x: hidden;
+	  		overflow-y: hidden;
+	  		margin: 0;
+	  		@media only screen and (min-device-width : 375px)
+		    and (max-device-width : 667px) // or 41.6875em
+		    and (orientation : portrait) 
+			{ 
+				// width: 95%;
+				// height: 97%;
+			}
+
+		::-webkit-scrollbar-track {
+			background: #d8ab67;
+		}
+		::-webkit-scrollbar{
+		  width: 3px;
+		  height: 3px;
+
+		}
+		::-webkit-scrollbar::before{
+			background-image: url('/content/arrow-up');
+			content: '^';
+			display: inline-block;
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #a68451;
+		  border: 0px none #ffffff;
+		  border-radius: 50%;
+		  height: 5px;
+
+		}
+		::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('/content/arrow-up.png');
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('/content/arrow-down.png');
+}
+::-webkit-scrollbar-button {
+	background-image: url('/content/arrow-down.png');
+}
+
+		.details-box-text {
+			padding: 20px;
+			overflow-x: hidden;
+	  		overflow-y: scroll;
+	  		height: 33%;
+	  		width: 80%;
+			  	
+		// ::-webkit-scrollbar-thumb:hover {
+		//   background: #ffd479;
+		// }
+		// ::-webkit-scrollbar-thumb:active {
+		//   background: #ffd479;
+		// }
+		// ::-webkit-scrollbar-track {
+		//   background: #ffffff;
+		//   border: 0px none #ffffff;
+		//   border-radius: 0px;
+		// }
+		// ::-webkit-scrollbar-track:hover {
+		//   background: #ffffff;
+		// }
+		// ::-webkit-scrollbar-track:active {
+		//   background: #ffffff;
+		// }
+		// ::-webkit-scrollbar-corner {
+		//   background: transparent;
+		// }
+
+			
+		}
+		.details-button-text {
+			color: #d8ab67;
+			margin: 6% 30% 10%;
+		}
+		.details-header {
+			text-align: center;
+		}
+		.details-img {
+			margin: 0px 75px 25px;
+		}
+   	}
+
+   	}
+} 
+
+// 	.page .content-box > div {
+//    }
+//   .page .content-box > div .headline-break {
+//     background: url(/content/headline_break.png) no-repeat;
+//     background-size: 100%;
+//     background-position: 0 0;
+//     width: 150px;
+//     height: 60px;
+//     margin: 0 auto; }
+//   .page .content-box > div h2 {
+//     text-align: center;
+//     font-family: DarbySansPoster-XLight;
+//     padding: 10px 0px 20px; }
+//   .page .content-box > div .scrolled-content {
+//     height: calc(100% - 150px);
+//     padding: 20px;
+//     font-size: 13px; }
+// }

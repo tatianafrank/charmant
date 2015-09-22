@@ -1,0 +1,366 @@
+html {
+  background: url() no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "darbysansPoster", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+  height: 100%;
+  position: fixed;
+  width: 100%; }
+  @media only screen and (min-width: 900px) {
+    html {
+      border-image-source: url("/content/outer-frame.png");
+      border-image-slice: 40;
+      border-image-width: 25px;
+      border-image-outset: 1;
+      min-height: 100%; } }
+  @media only screen and (max-device-width: 900px) {
+    html {
+      border-image: none; } }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+body {
+  -webkit-box-shadow: inset 0px 65px 0px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: inset 0px 65px 0px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: inset 0px 65px 0px 0px rgba(0, 0, 0, 0.28);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  font-family: "darbysansPoster", Trebuchet, Verdana, Helvetica, Arial, sans-serif; }
+
+.page-overlay.open {
+  opacity: 0.5;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed; }
+
+@media only screen and (min-width: 1700px) {
+  .top-nav ul {
+    margin-left: 80px; } }
+
+.top-nav li {
+  display: inline-block;
+  float: left;
+  color: white;
+  font-family: 'darbysansPoster';
+  margin: 0 40px; }
+  @media only screen and (max-width: 900px) {
+    .top-nav li {
+      display: none; } }
+  @media only screen and (max-width: 1250px) {
+    .top-nav li {
+      margin: 0 20px;
+      font-size: 14px; } }
+  @media only screen and (max-device-width: 900px) {
+    .top-nav li {
+      display: none; } }
+  @media only screen and (min-width: 1400px) {
+    .top-nav li {
+      margin: 0 60px;
+      font-size: 16px; } }
+  @media only screen and (min-width: 1700px) {
+    .top-nav li {
+      margin: 0 80px; } }
+
+.top-nav .book-now {
+  margin: -11px 10px 0;
+  width: 150px;
+  height: 45px;
+  background: url("/content/book-now-frame.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  color: white;
+  font-family: 'darbysansPoster';
+  text-align: center; }
+  .top-nav .book-now:hover {
+    background: url("/content/book-now-expand.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    z-index: 20;
+    overflow: visible;
+    height: 275px;
+    width: 200px; }
+  @media only screen and (max-width: 900px) {
+    .top-nav .book-now {
+      position: fixed;
+      right: 10px; } }
+  @media only screen and (max-device-width: 900px) {
+    .top-nav .book-now {
+      position: fixed;
+      right: 10px;
+      top: 50px;
+      width: 288px;
+      height: 89px;
+      font-size: 34px; } }
+  @media only screen and (max-width: 800px) {
+    .top-nav .book-now {
+      top: 22px; } }
+  .top-nav .book-now a {
+    margin-top: 13px;
+    display: inline-block; }
+    @media only screen and (max-device-width: 900px) {
+      .top-nav .book-now a {
+        margin-top: 25px; } }
+
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 15px; }
+  @media only screen and (max-device-width: 900px) {
+    .hamburger {
+      display: inline-block; } }
+  @media only screen and (max-width: 900px) {
+    .hamburger {
+      display: inline-block; } }
+
+.logo {
+  margin: 0 auto;
+  padding: 0 42%;
+  width: 15%; }
+  @media only screen and (max-device-width: 900px) {
+    .logo {
+      width: 40%;
+      display: inline-block;
+      margin: 0;
+      padding: 0 0 0 100px;
+      margin-top: -60px; } }
+  @media only screen and (max-width: 800px) {
+    .logo {
+      padding-top: 10px;
+      padding-left: 25%;
+      padding-right: 0;
+      width: 30%;
+      display: inline-block; } }
+
+.mobile-nav {
+  display: none; }
+
+.mobile-nav.open {
+  display: inline-block;
+  position: absolute;
+  z-index: 30; }
+  .mobile-nav.open li {
+    font-family: 'darbysansPoster';
+    margin: 30px;
+    font-size: 50px;
+    color: white; }
+  .mobile-nav.open .sign-up {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    border: 1px white solid;
+    color: white;
+    width: 300px;
+    height: 40px;
+    margin-left: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'darbysansPoster'; }
+
+.page-frame {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  max-width: 100%; }
+
+.footer {
+  -webkit-box-shadow: inset 0px -75px 0px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: inset 0px -75px 0px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: inset 0px -75px 0px 0px rgba(0, 0, 0, 0.38);
+  float: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0; }
+  @media only screen and (max-width: 800px) {
+    .footer {
+      position: fixed; } }
+  .footer ul {
+    display: inline-block; }
+  .footer li {
+    display: inline-block;
+    float: left;
+    color: white;
+    font-family: 'darbysansPoster';
+    margin: 0 20px; }
+  .footer .main {
+    width: 70%; }
+    @media only screen and (max-width: 1150px) {
+      .footer .main {
+        width: 60%;
+        margin-left: 0; }
+        .footer .main li {
+          font-size: 12px;
+          margin: 0 10px; } }
+    @media only screen and (max-width: 900px) {
+      .footer .main {
+        width: 100%;
+        margin: 0 10%;
+        left: 0; }
+        .footer .main li {
+          font-size: 12px;
+          margin: 0 5px; } }
+  .footer .social {
+    right: 0; }
+    .footer .social li {
+      margin: 0 5px; }
+    @media only screen and (max-width: 900px) {
+      .footer .social {
+        width: 100%;
+        margin: 0 30%; } }
+
+#home-page {
+  box-shadow: none; }
+  #home-page .home-center {
+    color: white;
+    font-family: 'darbysansPoster';
+    margin: 25% 25%;
+    text-align: center; }
+    @media only screen and (max-width: 1000px) {
+      #home-page .home-center {
+        margin: 25% 25%; } }
+    @media only screen and (min-width: 1650px) {
+      #home-page .home-center {
+        margin: 15% 40%; } }
+  #home-page .home-center:before {
+    border-top: 3px solid white;
+    width: 75%;
+    content: '';
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
+  #home-page .home-center-text:after {
+    border-bottom: 3px solid white;
+    width: 75%;
+    content: '';
+    display: block;
+    text-align: center;
+    margin: 15px auto; }
+
+#home-page.hidden {
+  display: none; }
+
+#rooms-page.hidden {
+  display: none; }
+
+#rooms-page {
+  box-shadow: none; }
+  #rooms-page
+.details-border {
+    font-family: 'darbysansPoster';
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 300px;
+    height: 375px;
+    position: relative;
+    left: 55%;
+    top: 80px; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+      #rooms-page
+.details-border {
+        left: 15%;
+        right: 15%;
+        width: 70%;
+        height: 70%;
+        padding: 2%;
+        position: absolute;
+        top: 15%;
+        padding-top: 3.5%;
+        padding-left: 3%; } }
+    @media only screen and (max-width: 800px) {
+      #rooms-page
+.details-border {
+        left: 25%;
+        right: 15%;
+        width: 50%;
+        padding: 2%;
+        top: 3%; } }
+    #rooms-page
+.details-border .details-box {
+      position: absolute;
+      width: 93%;
+      height: 94%;
+      margin-top: 10px;
+      margin-left: 10px;
+      background: #fff;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      margin: 0; }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar-track {
+        background: #d8ab67; }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px; }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar::before {
+        background-image: url("/content/arrow-up");
+        content: '^';
+        display: inline-block; }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar-thumb {
+        background: #a68451;
+        border: 0px none #ffffff;
+        border-radius: 50%;
+        height: 5px; }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar-button:vertical:increment {
+        background-image: url("/content/arrow-up.png"); }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar-button:vertical:decrement {
+        background-image: url("/content/arrow-down.png"); }
+      #rooms-page
+.details-border .details-box ::-webkit-scrollbar-button {
+        background-image: url("/content/arrow-down.png"); }
+      #rooms-page
+.details-border .details-box .details-box-text {
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 33%;
+        width: 80%; }
+      #rooms-page
+.details-border .details-box .details-button-text {
+        color: #d8ab67;
+        margin: 6% 30% 10%; }
+      #rooms-page
+.details-border .details-box .details-header {
+        text-align: center; }
+      #rooms-page
+.details-border .details-box .details-img {
+        margin: 0px 75px 25px; }
+
+@font-face {
+  font-family: darbysansRegular;
+  src: url("fonts/DarbySans-Regular.otf"); }
+
+@font-face {
+  font-family: darbysansPoster;
+  src: url("fonts/DarbySansPoster-Regular.otf"); }
+
+@font-fance {
+  font-family: darbysansPosterLight;
+  src: url("fonts/DarbySansPoster-Light.otf"); }

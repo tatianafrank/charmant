@@ -1,0 +1,46 @@
+{  
+   "NAVIGATION":[  
+      {  
+         "SORTORDER":1,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/about",
+         "LINKTITLE":"About"
+      },
+      {  
+         "SORTORDER":2,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/rooms",
+         "LINKTITLE":"Rooms"
+      },
+      {  
+         "SORTORDER":3,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/group-events",
+         "LINKTITLE":"Group Events"
+      },
+      {  
+         "SORTORDER":4,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/neighborhood",
+         "LINKTITLE":"Neighborhood"
+      },
+      {  
+         "SORTORDER":5,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/blog",
+         "LINKTITLE":"Blog"
+      },
+      {  
+         "SORTORDER":6,
+         "LINKSWITCH":0,
+         "LINK":"",
+         "PATH":"/careers",
+         "LINKTITLE":"Careers"
+      }
+   ]
+}

@@ -1,0 +1,35 @@
+{
+    "PATH": "\/rooms\/classic-salle-king",
+    "SOCIAL_ICON1": "http:\/\/www.facebook.com\/charmant\/",
+    "SOCIAL_ICON2": "http:\/\/twitter.com\/charmant\/",
+    "SOCIAL_ICON3": "http:\/\/instagram.com\/charmant\/",
+    "PAGETITLE": "Charmant | Classic Salle King",
+    "META_DESCRIPTION": "Charmant Description",
+    "META_KEYWORDS": "Charmant Keywords",
+    "H1": "Classic Salle King",
+    "BLURB1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque at augue eu molestie. Nullam ut purus et elit bibendum rutrum sit amet facilisis orci. Curabitur rhoncus, nisl ut interdum consectetur, mauris sapien facilisis ante, a suscipit augue nunc ac velit. Nulla nec cursus nisi. Donec quis finibus neque. Sed accumsan feugiat mauris a eleifend. Suspendisse et ullamcorper risus. Praesent ut arcu sit amet lacus hendrerit placerat. Pellentesque elementum mollis sem. Integer sagittis nibh eget velit egestas, at dapibus magna suscipit. Vestibulum pretium cursus sodales. Nam convallis libero diam, id vehicula dolor tristique id. Sed ac semper velit, nec condimentum turpis. In id mauris semper, porttitor ex vestibulum, fringilla lectus. Donec ac dignissim massa, a accumsan est. Aenean porttitor nisi ligula, et ultrices dolor imperdiet eu. Quisque semper turpis hendrerit, mollis nibh at, molestie ante. Maecenas euismod ultrices ipsum vel vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed placerat nunc.",
+	"BUTTONSWITCH1":1,
+	"BUTTONLINK1":"http:\/\/www.reserve.com\/charmant\/",
+	"BUTTONTEXT1":"BOOK NOW",
+    "SLIDES": [
+        {
+            "SORTORDER": 1,
+            "IMAGE_ALT_TEXT": "Lorem Ipsum. Proin gravida nibh vel velit",
+            "H1": "",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/detail.jpg",
+            "IMAGE_ANCHOR": 5
+        },
+        {
+            "SORTORDER": 2,
+            "IMAGE_ALT_TEXT": "",
+            "H1": "",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/slide2.jpg",
+            "IMAGE_ANCHOR": 5
+        }
+    ],
+    "TEMPLATE": "detail"
+}

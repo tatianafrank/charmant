@@ -1,0 +1,30 @@
+{
+    "PATH": "\/",
+    "SOCIAL_ICON1": "http:\/\/www.facebook.com\/charmant\/",
+    "SOCIAL_ICON2": "http:\/\/twitter.com\/charmant\/",
+    "SOCIAL_ICON3": "http:\/\/instagram.com\/charmant\/",
+    "PAGETITLE": "Charmant | Home",
+    "META_DESCRIPTION": "Charmant Description",
+    "META_KEYWORDS": "Charmant Keywords",
+    "SLIDES": [
+        {
+            "SORTORDER": 1,
+            "IMAGE_ALT_TEXT": "The Only Independent Boutique Hotel in La Crosse",
+            "H1": "The Only Independent Boutique Hotel in La Crosse",
+            "LINKSWITCH": 1,
+            "LINK": "\/group-events",
+            "IMAGE": "\/content\/slides\/home.jpg",
+            "IMAGE_ANCHOR": 5
+        },
+        {
+            "SORTORDER": 2,
+            "IMAGE_ALT_TEXT": "",
+            "H1": "",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/slide2.jpg",
+            "IMAGE_ANCHOR": 5
+        }
+    ],
+    "TEMPLATE": "home"
+}

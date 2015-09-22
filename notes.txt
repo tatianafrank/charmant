@@ -1,0 +1,37 @@
+Charmant test notes:
+	•	Full-screen site that responds down to mobile
+	•	Borders should always be consistent distance from page edge
+	•	No element should ever overlap or collide with another element
+	•	User feedback on hover on navigation
+	•	Rooms detail and home are all that are needed
+	•	On detail page, content box can expand to fit content but should implement custom scroll if needed
+
+Json notes
+
+Additional json nodes for footer information, logo, etc. are fine. But all nodes from the example json provided must be included. All page json structures are identical, with some nodes being empty where they are not applicable.
+
+Background images on pages must be populated by the first child of their SLIDES nodes. 
+
+On home.html, if a SLIDES child node has a value in H1, this will be used as the text (eg, "Boutique Charm in Downtown La Crosse")
+
+If a SLIDES child node has a value in LINK, it must link out to that path or url.
+
+On room-detail.html, the H1 must be populated by H1 from the root node. The text there must be populated by BLURB1 from the root node. The button on this page must only appear if BUTTONLINK1 in the root node has a value, and the text must be the value of BUTTONTEXT1.
+
+All pages must use PAGETITLE in the root node for the page <title> value.
+
+All pages must use META_DESCRIPTION in the root node for the page content attribute in <meta name="description" content="META_DESCRIPTION">.
+
+All pages must use META_KEYWORDS in the root node for the page content attribute in <meta name="Keywords" content="META_KEYWORDS">.
+
+Top-level navigation must be populated using navigation.json.
+
+
+
+
+
+
+
+
+
+Guideline for mobile layout:
