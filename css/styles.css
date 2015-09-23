@@ -102,6 +102,11 @@ body {
     overflow: visible;
     height: 275px;
     width: 200px; }
+    @media only screen and (max-device-width: 900px) {
+      .top-nav .book-now:hover {
+        width: 285px;
+        height: 85px;
+        font-size: 28px; } }
   @media only screen and (max-width: 900px) {
     .top-nav .book-now {
       position: fixed;
@@ -128,10 +133,11 @@ body {
   display: none;
   color: white;
   font-size: 30px;
-  margin-left: 15px; }
+  margin-left: 75px; }
   @media only screen and (max-device-width: 900px) {
     .hamburger {
-      display: inline-block; } }
+      display: inline-block;
+      font-size: 75px; } }
   @media only screen and (max-width: 900px) {
     .hamburger {
       display: inline-block; } }
@@ -145,8 +151,8 @@ body {
       width: 40%;
       display: inline-block;
       margin: 0;
-      padding: 0 0 0 100px;
-      margin-top: -60px; } }
+      margin: 0;
+      padding: 45px 0 0 175px; } }
   @media only screen and (max-width: 800px) {
     .logo {
       padding-top: 10px;
@@ -244,6 +250,10 @@ body {
     @media only screen and (min-width: 1650px) {
       #home-page .home-center {
         margin: 15% 40%; } }
+    @media only screen and (max-device-width: 900px) {
+      #home-page .home-center {
+        font-size: 32px;
+        margin-top: 450px; } }
   #home-page .home-center:before {
     border-top: 3px solid white;
     width: 75%;
