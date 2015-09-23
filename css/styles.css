@@ -8,7 +8,7 @@ html {
   height: 100%;
   position: fixed;
   width: 100%; }
-  @media only screen and (min-width: 900px) {
+  @media screen and (min-device-width: 900px) {
     html {
       border-image-source: url("/content/outer-frame.png");
       border-image-slice: 40;
@@ -102,11 +102,6 @@ body {
     overflow: visible;
     height: 275px;
     width: 200px; }
-    @media only screen and (max-device-width: 900px) {
-      .top-nav .book-now:hover {
-        width: 285px;
-        height: 85px;
-        font-size: 28px; } }
   @media only screen and (max-width: 900px) {
     .top-nav .book-now {
       position: fixed;
@@ -115,10 +110,13 @@ body {
     .top-nav .book-now {
       position: fixed;
       right: 10px;
-      top: 50px;
-      width: 288px;
-      height: 89px;
-      font-size: 34px; } }
+      top: 65px;
+      width: 200px;
+      height: 65px;
+      font-size: 24px;
+      margin-top: 0; }
+      .top-nav .book-now a {
+        margin-top: 5px; } }
   @media only screen and (max-width: 800px) {
     .top-nav .book-now {
       top: 22px; } }
@@ -138,28 +136,28 @@ body {
     .hamburger {
       display: inline-block;
       font-size: 75px; } }
-  @media only screen and (max-width: 900px) {
-    .hamburger {
-      display: inline-block; } }
 
-.logo {
-  margin: 0 auto;
-  padding: 0 42%;
-  width: 15%; }
-  @media only screen and (max-device-width: 900px) {
-    .logo {
-      width: 40%;
-      display: inline-block;
-      margin: 0;
-      margin: 0;
-      padding: 45px 0 0 175px; } }
-  @media only screen and (max-width: 800px) {
-    .logo {
-      padding-top: 10px;
-      padding-left: 25%;
-      padding-right: 0;
-      width: 30%;
-      display: inline-block; } }
+@media screen and (min-device-width: 900px) {
+  .logo {
+    margin: 0 auto;
+    padding: 0 42%;
+    width: 15%; } }
+
+@media only screen and (max-device-width: 900px) {
+  .logo {
+    width: 40%;
+    display: inline-block;
+    margin: 0;
+    margin: 0;
+    padding: 45px 0 0 175px; } }
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    padding-top: 10px;
+    padding-left: 25%;
+    padding-right: 0;
+    width: 30%;
+    display: inline-block; } }
 
 .mobile-nav {
   display: none; }
@@ -242,12 +240,13 @@ body {
   #home-page .home-center {
     color: white;
     font-family: 'darbysansPoster';
-    margin: 25% 25%;
-    text-align: center; }
-    @media only screen and (max-width: 1000px) {
+    margin: 15% 25%;
+    text-align: center;
+    font-size: 24px; }
+    @media screen and (max-device-width: 1000px) {
       #home-page .home-center {
         margin: 25% 25%; } }
-    @media only screen and (min-width: 1650px) {
+    @media screen and (min-device-width: 1650px) {
       #home-page .home-center {
         margin: 15% 40%; } }
     @media only screen and (max-device-width: 900px) {
@@ -362,3 +361,15 @@ body {
       #rooms-page
 .details-border .details-box .details-img {
         margin: 0px 75px 25px; }
+
+@font-face {
+  font-family: darbysansRegular;
+  src: url("fonts/DarbySans-Regular.otf"); }
+
+@font-face {
+  font-family: darbysansPoster;
+  src: url("fonts/DarbySansPoster-Regular.otf"); }
+
+@font-fance {
+  font-family: darbysansPosterLight;
+  src: url("fonts/DarbySansPoster-Light.otf"); }
